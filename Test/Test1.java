@@ -8,13 +8,13 @@ public class Test1 {
 	static List <Long> list = new ArrayList <Long>();
     public List<Long> scan(long begin,long end) {
         int div = 0;
-       lable: for(long i = begin ; i <= end; i++) {                                                                               
+        for(long i = begin ; i <= end; i++) {                                                                               
             for(long j=1 ; j<=i; j++) { 
                 if (i % j==0) 
                 div++;
                 if(div>2) {
                 	div = 0;
-                	continue lable;
+                	continue;
                 }
             }
             if(div == 2){
